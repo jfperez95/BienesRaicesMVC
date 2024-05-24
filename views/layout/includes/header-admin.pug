@@ -1,0 +1,23 @@
+header.bg-indigo-600.p-4
+            .container.mx-auto.flex.justify-between.items-center
+                a(href="/") 
+                    h1.text-2xl.text-white.font-extrabold.txt-center Bienes
+                        span.font-normal Raices
+                
+                nav(class="my-5 text-sm md:flex md:items-center md:gap-3 font-bold text-white")
+                    a(href="/mis-propiedades" class="block md:inline-block md:mt-0 md:mr-4") Mis Propiedades
+                    a(href="" class="block md:inline-block md:mt-0 md:mr-4") Mi perfil
+
+                    form(action="/auth/cerrar-sesion" method="POST")
+                        input(type="hidden" name="_csrf" value=csrfToken)
+                        input(type="submit" class="bg-indigo-800 py-2 px-10 rounded-lg cursor-pointer" value="Cerrar Sesión")
+                    
+                    <div class="md:hidden">
+                        <button type="button" class="block text-white hover:text-gray-200 focus:text-gray-200 focus:outline-none">
+                        <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        </svg>
+                        </button>
+                    </div>
+                    
+                    
